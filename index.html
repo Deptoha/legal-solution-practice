@@ -1,11 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practice task</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice task</title>
+  <!-- tailwind and daisy ui  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- goole font  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
+
+  <!-- style  -->
+
+  <style>
+    .font-EB-Garamond {
+      font-family: 'EB Garamond', serif;
+    }
+  </style>
 </head>
-<body>
-    
+
+<body class="font-EB-Garamond max-wx-[1170px] lg:mx-80">
+  <!-- header  -->
+
+  <header>
+    <!-- nav bar  -->
+
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Item 1</a></li>
+            <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-2xl">Justice</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li>
+            <details>
+              <summary>Parent</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-primary bg-[#B68C5A] w-[150px]">Free Consultation</a>
+      </div>
+    </div>
+
+    <!-- banner section  -->
+
+    <div class="hero h-[550px]" style="background-image: url(./images/banner.png);">
+      <div class="hero-overlay "></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+          <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the
+            majority have suffered alteration in some form, by injected humour.</p>
+          <div class="">
+            <input type="text" placeholder="Search your services" class="h-14 pl-4 rounded-lg w-[300px]">
+            <button class="btn btn-error font-semibold text-xl text-white h-14  w-36">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- legal pactice  -->
+
+    <section class="mt-20 mb">
+      <div class="text-center">
+        <h4 class="font-extrabold text-4xl mb-3">The Legal Practice Area</h4>
+        <p class="mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+          alteration in some form, by injected humour.</p>
+      </div>
+
+<!-- card section  -->
+
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <div class="card w-96 bg-base-100 ">
+        <figure class="px-10 pt-10">
+          <img src="images/business.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Business Law</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img src="images/Frame.png" alt="">
+          
+        </div>
+      </div>
+      
+      <div class="card w-96 bg-base-100 ">
+        <figure class="px-10 pt-10">
+          <img src="images/criminal.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Criminal Law</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img src="images/Frame.png" alt="">
+          
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 ">
+        <figure class="px-10 pt-10">
+          <img src="images/child.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Child Support</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img src="images/Frame.png" alt="">
+          
+        </div>
+      </div>
+
+     </div>
+     <hr>
+
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <div class="card w-96 bg-base-100 ">
+        <figure class="px-10 pt-10">
+          <img src="images/education.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Education Law</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img src="images/Frame.png" alt="">
+          
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 ">
+        <figure class="px-10 pt-10">
+          <img src="images/divorce.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Divorce Law</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img src="images/Frame.png" alt="">
+          
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 ">
+        <figure class="px-10 pt-10">
+          <img src="images/tax.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Tax Law</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <img src="images/Frame.png" alt="">
+          
+        </div>
+      </div>
+
+     </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
 </body>
+
 </html>
